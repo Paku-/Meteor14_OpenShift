@@ -42,7 +42,7 @@ It's goal is to enable the Meteor 1.4 apps to be deployed into the OS cloud.
 
 9. If so you may push your repo back into the cloud 
 
-So you are almost done now, but have a look into the
+You are almost done now, but have a look into the
         
         meteorApp.js file. 
 
