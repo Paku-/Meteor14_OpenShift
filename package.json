@@ -1,0 +1,24 @@
+{
+  "name": "openshift-cartridge-nodejs-template-for-meteor-1-4",
+  "version": "1.0.1",
+  "description": "Custom Node.js cartridge for Meteor on OpenShift",
+  "private": true,
+  "main": "meteorApp.js",
+  "scripts": {
+    "start": "node meteorApp.js"
+  },
+  "author": "Paku based on Ionut-Cristian Florescu <ionut.florescu@gmail.com> work",
+  "license": "MIT/ISC",
+  "engines": {
+    "node": ">= 4.4.7",
+    "npm": ">= 2.0.0"
+  },
+  "dependencies": {
+    "fibers": "*",
+    "source-map-support":"*",
+    "underscore":"*",
+    "semver":"*"
+  },
+  "devDependencies": {},
+  "bundleDependencies": []
+}
