@@ -13,7 +13,7 @@ It's goal is to enable the Meteor 1.4 apps to be deployed into the OS cloud.
 1. Create new OpenShift App based on 2 cartridges: "Node.js Auto-Updating" & "Cron"
 2. Pull the newly created App repo into the local folder.
 3. Pull this repo from GitHub into the other local folder.
-4. Copy (and overwrite) this repo files into original OS repo folder.
+4. Copy (and overwrite) this repo files into original OpenShift repo folder.(All but git's .get folder!)
 5. You may test the config now by committing changes then pushing the repo back to OpenShift. There should be some NPM installation messages, then the original nodejs server should be started (as there is no meteor app at this time).
 6. Once you have got the modified repo working, build your Metero 1.4 app for Linux platform using command like that:
 
