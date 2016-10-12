@@ -3,7 +3,7 @@ var fs = require('fs')
 
 /// Setup env
 process.env.ROOT_URL = "http://"+process.env.OPENSHIFT_APP_DNS || "http://localhost";
-//process.env.MONGO_URL = process.env.OPENSHIFT_MONGODB_DB_URL || "PLEASE_PROVIDE_A_MONGO_URL";
+process.env.MONGO_URL = process.env.OPENSHIFT_MONGODB_DB_URL || "PLEASE_PROVIDE_A_MONGO_URL";
 //process.env.MAIL_URL = optional MAIL_URL and other env variables may be setup here
 process.env.PORT = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 process.env.BIND_IP = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
@@ -27,6 +27,7 @@ if(!err)
   require('./main.js');
 }else{
   console.log("************ Starting Demo NodeJS SERVER  ************");
+  require('use-strict')
   require('./app.js');
 }
 });
